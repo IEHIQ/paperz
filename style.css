@@ -1,0 +1,121 @@
+* {
+    font-family: "Bahnschrift", sans-serif;
+    color: #1f1f1f;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.left_aligned {
+    width: 440px;
+    position: absolute;
+    left: 10px;
+    margin: 5px;
+}
+.right_aligned {
+    width: 325px;
+    position: absolute;
+    right: 10px;
+    margin: 5px;
+}
+body {
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+.game {
+    box-shadow: #f0f0f0 0px 0px 250px 0px;
+    text-align: center;
+    position: fixed;
+    top: 40px;
+    height: 524px;
+    width: 800px;
+    padding: 10px;
+}
+.persons {
+    overflow-y: scroll;
+    box-shadow: #f0f0f0 0px 0px 5px 1px;
+    padding: 5px;
+    height: 504px;;
+    scrollbar-width: none;
+}
+.persons::-webkit-scrollbar {
+    width: 0;
+}
+.personCard {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 10px 15px 10px;
+    text-align: left;
+    width: 400px;
+    box-shadow: #f0f0f0 0px 0px 5px 1px;
+}
+button { 
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    border: solid #f0f0f0 1px;
+    box-shadow: #f0f0f0 0px 0px 5px 1px;
+}
+button:disabled {
+    opacity: 50%;
+}
+button:hover {
+    cursor: pointer;
+}
+.controls {
+    top: 320px;
+}
+.good {
+    background-color: #bbffbb;
+}
+.bad {
+    background-color: #ffbbbb;
+}
+.help {
+    font-size: 16px;
+    text-align: left;
+    box-shadow: #f0f0f0 0px 0px 5px 1px;
+}
+.help:hover
+{
+    cursor: help;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+ul {
+    padding-top: 0;
+    margin-top: 0;
+}
+.error_indicators {
+    height: 30px;
+    top: 400px;
+}
+.indicator {
+    border-radius: 10px;
+    display: inline-block;
+    border: solid #f0f0f0 2px;
+    height: 30px;
+    width: 30px;
+    margin: 0 30px 0 30px;
+}
+.timer {
+    font-size: 48px;
+    bottom: 10px;
+}
+.splash {
+    position: fixed;
+    height: 524px;
+    width: 800px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.end_screen, .win_screen {
+    display: none;
+}
+.splash h1, .splash button {
+    position: relative;
+    top: 200px;
+}
